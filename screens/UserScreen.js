@@ -1,16 +1,18 @@
+//! -----------BOTTOM TABS START------------
+
 import { View, Text, Button, StyleSheet } from 'react-native'
 
 function UserScreen({ navigation }) {
-  function openDrawerHandler() {
-    navigation.toggleDrawer()
-  }
+  // function openDrawerHandler() {
+  //   navigation.toggleDrawer()
+  // }
 
   return (
     <View style={styles.rootContainer}>
       <Text>
         This is the <Text style={styles.highlight}>"User"</Text> screen!
       </Text>
-      <Button title='Open Drawer' onPress={openDrawerHandler} />
+      {/* <Button title='Open Drawer' onPress={openDrawerHandler} /> */}
     </View>
   )
 }
@@ -28,3 +30,37 @@ const styles = StyleSheet.create({
     color: '#eb1064',
   },
 })
+//! ------------BOTTOM TABS END-------------
+
+//! -----------DRAWER START------------
+// import { View, Text, Button, StyleSheet } from 'react-native'
+
+// function UserScreen({ navigation }) {
+//   function openDrawerHandler() {
+//     navigation.toggleDrawer()
+//   }
+
+//   return (
+//     <View style={styles.rootContainer}>
+//       <Text>
+//         This is the <Text style={styles.highlight}>"User"</Text> screen!
+//       </Text>
+//       <Button title='Open Drawer' onPress={openDrawerHandler} />
+//     </View>
+//   )
+// }
+
+// export default UserScreen
+
+// const styles = StyleSheet.create({
+//   rootContainer: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+//   highlight: {
+//     fontWeight: 'bold',
+//     color: '#eb1064',
+//   },
+// })
+//! -----------------DRAWER END-----------------
